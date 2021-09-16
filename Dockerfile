@@ -10,4 +10,4 @@ RUN mvn clean package
 #To run the jar
 ENTRYPOINT ["java","-war","target/App.war"]
 #port
-EXPOSE 8080
+EXPOSE 3000
