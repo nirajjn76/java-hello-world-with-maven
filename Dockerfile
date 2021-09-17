@@ -8,6 +8,6 @@ COPY pom.xml /pom.xml
 #to build the project we used maven : which is (Project Management tool)
 RUN mvn clean package
 #To run the jar
-ENTRYPOINT ["java","-war","target/App.war"]
+ENTRYPOINT ["java","-jar","target/App.war"]
 #port
-EXPOSE 3000
+EXPOSE 4000
